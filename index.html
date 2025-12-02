@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys VS Girls Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game-container">
+
+        <div id="play-area">
+
+            <div id="girls-progress" class="progress-bar girls-bg"></div>
+            <div id="boys-progress" class="progress-bar boys-bg"></div>
+
+            <div id="center-line" class="center-line"></div>
+
+            <div id="visual-layer">
+
+                <div id="win-counters">
+                    <div class="team-score boys-color">
+                        <span class="label">Boys:</span>
+                        <span id="boys-wins" class="win-count">0</span>
+                    </div>
+                    <div class="team-score girls-color">
+                        <span class="label">Girls:</span>
+                        <span id="girls-wins" class="win-count">0</span>
+                    </div>
+                </div>
+
+                <img src="girl.png" alt="Girl Character" class="character" id="girls-character">
+                <img src="boy.png" alt="Boy Character" class="character" id="boys-character">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="celebration-screen" class="hidden">
+        <h1 id="winner-message"></h1>
+    </div>
+
+    <button id="reset-button">Reset Scores</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
